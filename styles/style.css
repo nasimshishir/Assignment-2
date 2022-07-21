@@ -19,7 +19,7 @@ main {
 
 .container-1 {
     width: 1160;
-    background-color: #161616;
+    background: linear-gradient(#589037, #164C2F);
     border-radius: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -41,7 +41,7 @@ main {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.3em;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .left-half p {
@@ -54,11 +54,21 @@ main {
 
 .left-half a {
     padding: 10px 20px;
-    background-color: #DD0000;
+    border: 3px solid #E0AC34;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: 400;
-    color: #FFFFFF;
+    font-weight: 500;
+    color: #E0AC34;
+    background-image: linear-gradient(to right, transparent 50%, #E0AC34);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+}
+
+.left-half a:hover {
+    color: #164C2F;
+    background-position: 100%;
+
 }
 
 .left-half a i {
@@ -87,7 +97,7 @@ main {
 .sidebar {
     width: 250px;
     height: 250px;
-    background-color: #161616;
+    background-color: #589037;
     padding: 0 25px;
     border-radius: 10px;
     display: flex;
@@ -107,15 +117,15 @@ main {
 }
 
 .sidebar li:hover {
-    outline: 3px solid #DD0000;
+    outline: 3px solid #164C2F;
 }
 
 #active {
-    background-color: #DD0000;
+    background-color: #E0AC34;
 }
 
 #active-text {
-    color: #FFFFFF;
+    color: #164C2F;
 }
 
 .sidebar li a {
@@ -124,6 +134,8 @@ main {
     line-height: 50px;
     font-size: 14px;
     font-weight: 500;
+
+
 }
 
 /* upcoming matches */
@@ -201,15 +213,19 @@ main {
     box-shadow: 0px 5px 15px lightgray;
 }
 
+.main-blog-box img {
+    width: 100%;
+}
+
 .blog-ctgry {
     text-decoration: none;
     font-weight: 500;
     font-size: 12px;
     color: #161616;
-    border: 1px solid #b5b5b5;
+    border: 1px solid #589037;
     border-radius: 5px;
     padding: 4px 16px;
-    color: #DD0000;
+    color: #589037;
 
 }
 
@@ -217,8 +233,11 @@ main {
     padding: 15px 20px;
 }
 
-.blog-description h4 {
+.blog-description h3 {
     margin: 16px auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4rem;
 }
 
 .responses a {
@@ -228,16 +247,14 @@ main {
     color: #161616;
 }
 
-.response-icons {
-    color: #DD0000;
-}
+
 
 /* Footer */
 
 
 .footer {
     height: 300px;
-    background-color: #161616;
+    background-color: #164C2F;
     display: grid;
 }
 
@@ -270,7 +287,7 @@ hr {
 }
 
 .menu a:hover {
-    color: #DD0000;
+    color: #E0AC34;
 
 }
 
@@ -286,7 +303,7 @@ hr {
 }
 
 .social-icons a:hover {
-    color: #DD0000;
+    color: #E0AC34;
 }
 
 
@@ -361,7 +378,8 @@ hr {
         border: none;
     }
 
-    .matches {
+    .matches,
+    .blogs {
         grid-template-columns: 1fr;
         margin: 0;
     }
@@ -441,7 +459,8 @@ hr {
         border: none;
     }
 
-    .matches {
+    .matches,
+    .blogs {
         grid-template-columns: repeat(2, 1fr);
         margin: 0;
     }
@@ -461,23 +480,23 @@ hr {
 
     .btn {
         padding: 10px 20px;
-        background-color: #DD0000;
+        background-color: #E0AC34;
         border-radius: 5px;
         text-decoration: none;
         font-weight: 400;
-        color: #FFFFFF;
+        color: #164C2F;
     }
 
     .btn i {
         margin-left: 15px;
     }
 
-}
 
-/* footer */
 
-.footer {
-    width: 100%;
-}
+    /* footer */
+
+    .footer {
+        width: 100%;
+    }
 
 }
