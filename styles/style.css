@@ -59,7 +59,7 @@ main {
     text-decoration: none;
     font-weight: 500;
     color: #E0AC34;
-    background-image: linear-gradient(to right, transparent 50%, #E0AC34);
+    background-image: linear-gradient(to right, transparent 50%, #E0AC34 50%);
     background-size: 200%;
     background-position: 0%;
     transition: 0.4s;
